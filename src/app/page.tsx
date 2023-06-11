@@ -10,6 +10,7 @@ export default function Home() {
 
       <Link
         href={"/signin"}
+        as={"/signin"}
         className="text-white font-bold hover:bg-green-500 rounded-lg p-4 bg-green-600"
       >
         Singin
