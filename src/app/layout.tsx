@@ -4,7 +4,12 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Next 13",
+  title: {
+    default: "Next 13",
+    template:"%s | Next 13"
+    
+  },
+
   description: "App create with next 13",
 };
 

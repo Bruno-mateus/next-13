@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: "Singin | Next 13",
+  title: "Singin"
 };
 export default function Singin() {
   return (

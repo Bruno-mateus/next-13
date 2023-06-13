@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: "Dashboard | Next 13",
+  title: "Dashboard"
 };
 export default function Dashboard() {
   return (
@@ -11,6 +11,12 @@ export default function Dashboard() {
         href={"/profile"}
       >
         Profile
+      </Link>
+      <Link
+        className="text-white mt-4 font-bold hover:bg-green-500 rounded-lg p-4 bg-green-600"
+        href={"/product/123/shirt"}
+      >
+        My product
       </Link>
       <Link
         className="text-white mt-4 font-bold hover:bg-green-500 rounded-lg p-4 bg-green-600"

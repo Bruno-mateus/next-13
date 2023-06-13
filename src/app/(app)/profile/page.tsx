@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: "Profile | Next 13",
+  title: "Profile",
 };
 export default function Profile() {
   return (
