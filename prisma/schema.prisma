@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl         = env("DIRECT_URL")
+
+}
+
+model Users {
+  id            String @unique @default(uuid())
+  name          String
+  email         String @unique
+  password      String
+  lastname      String 
+  premium       Boolean @default(false)
+  refresh_toke  RefershToken?
+}
+
+model RefershToken {
+  id        String @unique @default(uuid())
+  expiresIn Int
+  user      Users @relation(fields: [user_id],references: [id])
+  user_id   String @unique
+  @@map("refresh_token")
+}

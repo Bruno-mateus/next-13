@@ -15,6 +15,14 @@ export default function Home() {
       >
         Singin
       </Link>
+
+      <Link
+        href={"/signin"}
+        as={"/create-account"}
+        className="text-white font-bold hover:bg-green-500 rounded-lg p-4 mt-4 bg-green-600"
+      >
+        Create Account
+      </Link>
     </main>
   );
 }
